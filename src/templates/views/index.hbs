@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta Access-Control-Allow-Origin: localhost:3000>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+     <link rel="icon" href="/css/img/pig-latin-new.jpg">
+    <title>Pig latin weather</title>
+</head>
+<body>
+    <div class="main-content">
+     {{>header}}
+     <img src="/css/img/Pig-latin-new.jpg" alt=""">
+        
+    <h3>Get your current weather in pig latin</h3>
+
+        <form action="">
+            <input type="text" placeholder="enter your address">
+        <button>PigLatin!</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+        <p id="message-3"></p>
+    
+     </div>
+    
+
+    
+
+    {{>footer}}
+    <script type="text/javascript" src="../../js/app.js"></script>
+</body>
+</html>
