@@ -6,7 +6,7 @@ const { send } = require('process')
 const geocode = require('../src/utils/geocode')
 const forecast = require('../src/utils/forecast')
 const cors = require('cors')
-
+const port = process.env.PORT || 3000
 
 
 
@@ -117,7 +117,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('server running.')
 })
 
